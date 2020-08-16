@@ -11,113 +11,110 @@
   </head>
 
   <body>
-    <header>
-       <nav class="navigation">
-         <ul class="navigation__list">
-           <li>
-             <a href="#skills">Навыки</a>
-           </li>
-           <li>
-             <a href="#education">Образование</a>
-           </li>
-           <li>
-             <a href="#portfolio">Портфолио</a>
-           </li>
-           <li>
-             <a href="#contacts">Контакты</a>
-           </li>
-         </ul>
+    <header class="page-header">
+       <nav class="page-header__navigation navigation">
+         <button class="navigation__toggle" type="button">Открыть меню</button>
+         <div class="navigation__wrapper">
+           <ul class="navigation__list site-list">
+             <li class="site-list__item">
+               <a href="#education">Образование</a>
+             </li>
+             <li class="site-list__item">
+               <a href="#skills">Навыки</a>
+             </li>
+             <li class="site-list__item">
+               <a href="#portfolio">Портфолио</a>
+             </li>
+             <li class="site-list__item">
+               <a href="#contacts">Контакты</a>
+             </li>
+           </ul>
+         </div>
        </nav>
     </header>
 
-    <main>
+    <main class="page-main">
+      <h1 class="visually-hidden">Персональная информация, контакты, образование, навыки и портфолио.</h1>
       <!-- Блок знакомства -->
       <section class="personal-id" id="personal-id">
-        <div class="">
-          <h1>Ямщикова Евгения</h1>
-          <p>
-            Привет! Меня зовут Евгения, я начинающий фронтенд-разработчик.
-          </p>
-          <p>
-            Вот информация, которая поможет вам узнать меня лучше:
-            <ol>
-              <li>
-                Родилась и живу в Москве. При наличии работы, работаю тут же. Для себя решила, что готова к переезду в другие города/страны/континенты.
-              </li>
-              <li>
-                Мне полных 32 года. Нахожусь в таком возрасте, когда уже кое-что понимаешь и повидал всякое. Некоторые называют это жизненным опытом. В то же время, есть силы и желания изменить к лучшему свою жизнь, учиться новому и не бояться сделать первый шаг в светлое будущее.
-              </li>
-              <li>
-                Люблю путешествовать, также являюсь образцовым туристом. В моем профиле airbnb целых четыре положительных отзыва из четырех. Не верите? https://www.airbnb.ru/users/show/182234250
-              </li>
-            </ol>
-          </p>
-        </div>
-      </section>
-
-      <!-- Блок навыков -->
-      <section class="skills" id="skills">
-        <div class="">
-          <h2>Навыки</h2>
-          <ul>
-            <li>
-              HTML и CSS (в том числе сетки и CSS-фреймворки, спецификации W3C, HTML5/CSS3 Polyfills)
+        <h2 class="personal-id__title">Привет! Меня зовут Евгения, я начинающий фронтенд-разработчик.</h2>
+        <p class="personal-id__description">
+          Вот информация, которая поможет вам узнать меня лучше:
+          <ol class="personal-id__list">
+            <li class="personal-id__item">
+              Родилась и живу в Москве. При наличии работы, работаю тут же. Для себя решила, что готова к переезду в другие города/страны/континенты.
             </li>
-            <li>
-              Препроцессоры CSS (Sass, Less)
+            <li class="personal-id__item">
+              Мне полных 32 года. Нахожусь в таком возрасте, когда уже кое-что понимаешь и повидал всякое. Некоторые называют это жизненным опытом. В то же время, есть силы и желания изменить к лучшему свою жизнь, учиться новому и не бояться сделать первый шаг в светлое будущее.
             </li>
-            <li>
-              Git
+            <li class="personal-id__item">
+              Люблю путешествовать, также являюсь образцовым туристом. В моем профиле airbnb целых четыре положительных отзыва из четырех. Не верите? https://www.airbnb.ru/users/show/182234250
             </li>
-            <li>
-              DOM
-            </li>
-            <li>
-              BEM
-            </li>
-            <li>
-              SVG
-            </li>
-            <li>
-              JavaScript
-            </li>
-            <li>
-              EcmaScript 2015+
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Блок образования -->
-      <section class="education" id="education">
-        <div class="">
-          <h2>Образование</h2>
-          <p>
-            У меня высшее образование. К сфере IT оно не относится, поэтому я решила компенсировать этот пробел путем прохождения целой кучи разнообразных курсов. У меня даже есть диплом о профессиональной переподготовке по программе "Веб-дизайнер".
-          </p>
-        </div>
-      </section>
-
-      <!-- Блок портфолио -->
-      <section class="portfolio" id="portfolio">
-        <div class="">
-          <h2>Портфолио</h2>
-          <p>
-            Прикрепить список работ.
-          </p>
-        </div>
+          </ol>
+        </p>
       </section>
 
       <!-- Блок контактов -->
       <section class="contacts" id="contacts">
-        <div class="">
-          <h2>Контакты</h2>
-          <p>
-            Telegram: @CaptainFeralFerret
-            E-mail: ferretsphilosophy@gmail.com
-            Git: https://github.com/Kinkandju
-          </p>
-        </div>
+        <h2 class="contacts__title">Контакты</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="">Telegram: @CaptainFeralFerret</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="">E-mail: ferretsphilosophy@gmail.com</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="">Git: https://github.com/Kinkandju</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Блок образования -->
+      <section class="education" id="education">
+        <h2 class="education__title">Образование</h2>
+        <p class="education__description">
+          У меня высшее образование. К сфере IT оно не относится, поэтому я решила компенсировать этот пробел путем прохождения целой кучи разнообразных курсов. У меня даже есть диплом о профессиональной переподготовке по программе "Веб-дизайнер".
+        </p>
+      </section>
+
+      <!-- Блок навыков -->
+      <section class="skills" id="skills">
+        <h2 class="skills__title">Навыки</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            HTML и CSS (в том числе сетки и CSS-фреймворки, спецификации W3C, HTML5/CSS3 Polyfills)
+          </li>
+          <li class="skills__item">
+            Препроцессоры CSS (Sass, Less)
+          </li>
+          <li class="skills__item">
+            Git
+          </li>
+          <li class="skills__item">
+            DOM
+          </li>
+          <li class="skills__item">
+            BEM
+          </li>
+          <li class="skills__item">
+            SVG
+          </li>
+          <li class="skills__item">
+            JavaScript
+          </li>
+          <li class="skills__item">
+            EcmaScript 2015+
+          </li>
+        </ul>
+      </section>
+
+      <!-- Блок портфолио -->
+      <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">Портфолио</h2>
+        <p class="portfolio__description">
+          Прикрепить список работ.
+        </p>
       </section>
     </main>
 
