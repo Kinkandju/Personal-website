@@ -1,0 +1,26 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Разработка персонального сайта.",
+  "main": "index.html",
+  "dependencies": {
+    "eslint-plugin-vue": "^6.2.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinkandju/Personal-website.git"
+  },
+  "author": "Ямщикова Евгения",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kinkandju/Personal-website/issues"
+  },
+  "homepage": "https://github.com/kinkandju/Personal-website#readme"
+}
