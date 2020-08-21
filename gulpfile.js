@@ -1,4 +1,4 @@
-let project_folder = "dist";
+let project_folder = require("path").basename(__dirname);
 let source_folder = "#src";
 
 let path = {
@@ -39,8 +39,7 @@ let {src, dest} = require("gulp"),
   rename = require("gulp-rename"),
   uglify = require("gulp-uglify-es").default,
   imagemin = require("gulp-imagemin"),
-  webp = require("gulp-webp"),
-  webp_html = require("gulp-webp-html");
+  webp = require("gulp-webp");
 
   function browserSync(params) {
     browsersync.init({
@@ -54,7 +53,6 @@ let {src, dest} = require("gulp"),
 
   function html() {
     return src(path.src.html)
-      .pipe(webp_html())
       .pipe(dest(path.build.html))
       .pipe(browsersync.stream())
   }
@@ -87,7 +85,7 @@ let {src, dest} = require("gulp"),
   function js() {
     return src(path.src.js)
       .pipe(dest(path.build.js))
-      // .pipe(uglify())
+      .pipe(uglify())
       .pipe(
         rename({
           extname: ".min.js"
@@ -101,7 +99,7 @@ let {src, dest} = require("gulp"),
     return src(path.src.img)
       .pipe(
         webp({
-          quality: 70
+          quality: 70,
         })
       )
       .pipe(dest(path.build.img))

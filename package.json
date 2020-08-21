@@ -1,14 +1,13 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-  "description": "Разработка персонального сайта.",
+  "description": "Разработка персонального сайта",
   "main": "index.html",
-  "dependencies": {
-    "eslint-plugin-vue": "^6.2.2"
-  },
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
@@ -18,10 +17,12 @@
     "gulp-rename": "^2.0.0",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
-    "gulp-webp-html": "^1.0.2"
+    "stylelint": "^13.6.1",
+    "stylelint-config-htmlacademy": "^0.1.4",
+    "webp-converter": "^2.2.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+		"test": "eslint js/"
   },
   "repository": {
     "type": "git",
@@ -32,5 +33,6 @@
   "bugs": {
     "url": "https://github.com/kinkandju/Personal-website/issues"
   },
-  "homepage": "https://github.com/kinkandju/Personal-website#readme"
+  "homepage": "https://github.com/kinkandju/Personal-website#readme",
+  "dependencies": {}
 }
