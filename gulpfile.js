@@ -1,4 +1,5 @@
-let project_folder = require("path").basename(__dirname);
+// let project_folder = require("path").basename(__dirname);
+let project_folder = "dist";
 let source_folder = "#src";
 
 let path = {
@@ -116,6 +117,12 @@ let {src, dest} = require("gulp"),
       .pipe(browsersync.stream())
   }
 
+	function fonts() {
+		return src(path.src.fonts)
+		.pipe(dest(path.build.fonts))
+		.pipe(browsersync.stream())
+	}
+
   function watchFiles(params) {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], css);
@@ -127,13 +134,14 @@ let {src, dest} = require("gulp"),
     return del(path.clean);
   }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.html = html;
 exports.css = css;
 exports.js = js;
 exports.images = images;
+exports.fonts = fonts;
 exports.build = build;
 exports.watch = watch;
 exports.clean = clean;
