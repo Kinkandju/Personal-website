@@ -1,8 +1,18 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
+	"license": "ISC",
+	"main": "index.html",
   "description": "Разработка персонального сайта",
-  "main": "index.html",
+	"author": "Ямщикова Евгения",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kinkandju/Personal-website.git"
+	},
+	"bugs": {
+		"url": "https://github.com/kinkandju/Personal-website/issues"
+	},
+	"homepage": "https://github.com/kinkandju/Personal-website#readme",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
@@ -23,36 +33,28 @@
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
     "prettier": "^2.1.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-htmlacademy": "^0.1.4",
     "webp-converter": "^2.2.3"
   },
-	"scripts": {
-		"editorconfig": "editorconfig-cli",
-		"stylelint": "stylelint \"Personal-website/less/**/*.less\" --syntax less",
-		"eslint": "eslint --ignore-path .gitignore .",
-		"test": "npm run editorconfig && npm run stylelint && eslint js/"
-	},
-	"browserslist": [
-		"last 2 versions",
-		"IE 11",
-		"Firefox ESR"
-	],
-	"editorconfig-cli": [
-		"*.json",
-		"*.js",
-		"#src/*.html",
-		"#src/js/**/*.js",
-		"#src/img/**/*.svg",
-		"#src/less/**/*.less"
-	],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kinkandju/Personal-website.git"
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"Personal-website/less/**/*.less\" --syntax less",
+    "eslint": "eslint --ignore-path .gitignore .",
+    "test": "npm run editorconfig && npm run stylelint && eslint js/"
   },
-  "author": "Ямщикова Евгения",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kinkandju/Personal-website/issues"
-  },
-  "homepage": "https://github.com/kinkandju/Personal-website#readme",
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "src/*.html",
+    "src/js/**/*.js",
+    "src/img/**/*.svg",
+    "src/less/**/*.less"
+  ],
   "dependencies": {}
 }

@@ -1,6 +1,5 @@
-// let project_folder = require("path").basename(__dirname);
 let project_folder = "dist";
-let source_folder = "#src";
+let source_folder = "src";
 
 let path = {
   build: {
@@ -15,15 +14,15 @@ let path = {
     html: source_folder + "/*.html",
     css: source_folder + "/less/style.less",
     js: source_folder + "/js/script.js",
-    img: source_folder + "/img/**/*.{jpg, png, svg, webp}",
-    fonts: source_folder + "/fonts/*.{woff, woff2}"
+    img: source_folder + "/img/**/*.{jpg,png,svg,webp}",
+    fonts: source_folder + "/fonts/*.{woff,woff2}"
   },
 
   watch: {
     html: source_folder + "/**/*.html",
     css: source_folder + "/less/**/*.less",
     js: source_folder + "/js/**/*.js",
-    img: source_folder + "/img/**/*.{jpg, png, svg, webp}"
+    img: source_folder + "/img/**/*.{jpg,png,svg,webp}"
   },
 
   clean: "./" + project_folder + "/"
