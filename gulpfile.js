@@ -1,7 +1,7 @@
-let project_folder = "dist";
-let source_folder = "src";
+const project_folder = "dist";
+const source_folder = "src";
 
-let path = {
+const path = {
   build: {
     html: project_folder + "/",
     css: project_folder + "/css/",
@@ -28,7 +28,7 @@ let path = {
   clean: "./" + project_folder + "/"
 }
 
-let {src, dest} = require("gulp"),
+const {src, dest} = require("gulp"),
   gulp = require("gulp"),
   browsersync = require("browser-sync").create(),
   del = require("del"),
@@ -133,8 +133,8 @@ let {src, dest} = require("gulp"),
     return del(path.clean);
   }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
-let watch = gulp.parallel(build, watchFiles, browserSync);
+const build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
+const watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.html = html;
 exports.css = css;

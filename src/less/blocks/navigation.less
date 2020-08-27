@@ -1,0 +1,24 @@
+.navigation {
+  @media (min-width: @mobile-width) {
+    &--opened {
+      display: block;
+    }
+
+    &--closed {
+      display: none;
+    }
+
+    &--nojs {
+      display: block;
+    }
+  }
+}
+
+.navigation__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
