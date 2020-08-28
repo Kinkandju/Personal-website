@@ -1,19 +1,20 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-	"license": "ISC",
-	"main": "index.html",
+  "license": "ISC",
+  "main": "index.html",
   "description": "Разработка персонального сайта",
-	"author": "Ямщикова Евгения",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/kinkandju/Personal-website.git"
-	},
-	"bugs": {
-		"url": "https://github.com/kinkandju/Personal-website/issues"
-	},
-	"homepage": "https://github.com/kinkandju/Personal-website#readme",
+  "author": "Ямщикова Евгения",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinkandju/Personal-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kinkandju/Personal-website/issues"
+  },
+  "homepage": "https://github.com/kinkandju/Personal-website#readme",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
     "eslint": "^7.7.0",
