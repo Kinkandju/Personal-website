@@ -8,6 +8,9 @@
 }
 
 .certificate a {
+  display: block;
+  position: relative;
+
   margin: 0 auto;
   padding: 10px 20px;
 
@@ -17,8 +20,42 @@
   &:hover {
     color: @marengo;
 
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
   }
+
+  &:hover .certificate__overlay {
+    opacity: 1;
+  }
+}
+
+.certificate__overlay {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+
+  width: 265px;
+  height: 372px;
+
+  opacity: 0;
+
+  transition: 0.5s ease;
+
+  background-color: @marengo;
+}
+
+.certificate__text {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+
+  transform: translate(-25%, -50%);
+
+  width: 80%;
+
+  font-size: 16px;
+
+  color: @white;
 }
 
 .certificate__name {
