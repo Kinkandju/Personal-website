@@ -35,7 +35,7 @@
     "gulp-webp": "^4.0.1",
     "prettier": "^2.1.0",
     "stylelint": "^13.6.1",
-    "stylelint-config-htmlacademy": "^0.1.4",
+    "stylelint-config-standard": "^20.0.0",
     "webp-converter": "^2.2.3"
   },
   "scripts": {
