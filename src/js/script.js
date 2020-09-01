@@ -17,3 +17,16 @@ const navigation = document.querySelector('.navigation');
     toggle.classList.remove('page-header__toggle--closed');
   }
 });
+
+const btnHtmlAcademy = document.querySelector('.education__html-academy');
+const certificate = document.querySelector('.certificate');
+
+btnHtmlAcademy.addEventListener('click', function() {
+  if (certificate.classList.contains('certificate--closed')) {
+    certificate.classList.remove('certificate--closed');
+    certificate.classList.add('certificate--opened');
+  } else {
+    certificate.classList.add('certificate--closed');
+    certificate.classList.remove('certificate--opened')
+  }
+});
