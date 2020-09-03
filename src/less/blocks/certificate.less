@@ -13,6 +13,11 @@
   &--opened {
     display: flex;
   }
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .certificate a {
@@ -49,7 +54,7 @@
 
   transition: 0.5s ease;
 
-  background-color: @marengo;
+  background-color: @emerald;
 }
 
 .certificate__text {

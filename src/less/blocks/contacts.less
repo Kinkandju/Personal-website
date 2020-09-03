@@ -14,7 +14,7 @@
   display: block;
 
   margin: 0;
-  padding: 10px 10px 10px 20px;
+  padding: 10px 10px 10px 0;
 
   font-weight: bold;
   color: @black;
@@ -25,9 +25,13 @@
   align-items: baseline;
 
   margin: 0 -20px;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .contacts__item a {
   color: @marengo;
+
+  &:hover {
+    color: @emerald;
+  }
 }
