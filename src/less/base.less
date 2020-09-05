@@ -17,6 +17,10 @@ body {
   @media (min-width: @tablet-width) {
     font-size: 16px;
   }
+
+  @media (min-width: @tablet-to-desktop-width) {
+    font-size: 17px;
+  }
 }
 
 a {
@@ -48,6 +52,13 @@ h2 {
 
     font-size: 24px;
   }
+
+  @media (min-width: @tablet-to-desktop-width) {
+    margin: 0 -50px;
+    padding: 25px 50px;
+
+    font-size: 25px;
+  }
 }
 
 section {
@@ -64,5 +75,10 @@ section {
   @media (min-width: @tablet-width) {
     margin: 0 -40px;
     padding: 20px 40px;
+  }
+
+  @media (min-width: @tablet-to-desktop-width) {
+    margin: 0 -50px;
+    padding: 25px 50px;
   }
 }
