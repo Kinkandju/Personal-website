@@ -14,8 +14,10 @@
     display: flex;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @mobil-to-tablet-width) {
     flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
     flex-wrap: wrap;
   }
 }
