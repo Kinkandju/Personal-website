@@ -4,24 +4,22 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
 
 .portfolio__work {
   margin: 0 -20px;
-  padding: 10px 20px;
-
-  @media (min-width: @mobil-to-tablet-width) {
-    margin: 0;
-    padding: 15px 15px;
-  }
+  padding: 20px 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 15px 15px;
+    width: 45%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 22%;
   }
 }
 
@@ -44,13 +42,7 @@
 .portfolio__image {
   width: 100%;
 
-  @media (min-width: @tablet-width) {
-    width: 320px;
-  }
-
-  @media (min-width: @tablet-to-desktop-width) {
-    width: 340px;
-  }
+  max-width: 420px;
 }
 
 .portfolio__name {
