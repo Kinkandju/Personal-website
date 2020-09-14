@@ -59,13 +59,20 @@ h2 {
 
     font-size: 25px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 -60px;
+    padding: 30px 60px;
+
+    font-size: 26px;
+  }
 }
 
 section {
   margin: 0 -20px;
   padding: 10px 20px;
 
-  width: 100%;
+  // width: 100%;
 
   border-bottom: 1px solid @light-black;
 
@@ -82,5 +89,10 @@ section {
   @media (min-width: @tablet-to-desktop-width) {
     margin: 0 -50px;
     padding: 25px 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 -60px;
+    padding: 30px 60px;
   }
 }
