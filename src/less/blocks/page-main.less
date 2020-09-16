@@ -6,6 +6,7 @@
 }
 
 .page-main__layout-container {
+  margin: 0 auto;
   padding: 0 20px;
 
   @media (min-width: @mobil-to-tablet-width) {
@@ -16,9 +17,13 @@
     padding: 0 40px;
   }
 
-  @media (min-width: @desktop-width) {
-    margin: 0 auto;
+  @media (min-width: @tablet-to-desktop-width) {
+    padding: 0 50px;
+  }
 
-    width: 1200px;
+  @media (min-width: @desktop-width) {
+    padding: 0 60px;
+
+    // width: 1080px;
   }
 }
