@@ -18,6 +18,14 @@
   padding: 10px 0;
 }
 
+.education__buttons {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.education__mgtu,
 .education__html-academy {
   display: block;
 
@@ -33,5 +41,11 @@
 
   @media (min-width: @mobil-to-tablet-width) {
     padding: 15px 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-shrink: 1;
+
+    padding: 15px 10px;
   }
 }
