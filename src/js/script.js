@@ -18,15 +18,24 @@ const navigation = document.querySelector('.navigation');
   }
 });
 
-const btnHtmlAcademy = document.querySelector('.education__html-academy');
-const certificate = document.querySelector('.certificate');
+function button (btnType, certificateType) {
+  btnType.addEventListener('click', function() {
+    if (certificateType.classList.contains('certificate--closed')) {
+      certificateType.classList.remove('certificate--closed');
+      certificateType.classList.add('certificate--opened');
+    } else {
+      certificateType.classList.add('certificate--closed');
+      certificateType.classList.remove('certificate--opened')
+    }
+  });
+}
 
-btnHtmlAcademy.addEventListener('click', function() {
-  if (certificate.classList.contains('certificate--closed')) {
-    certificate.classList.remove('certificate--closed');
-    certificate.classList.add('certificate--opened');
-  } else {
-    certificate.classList.add('certificate--closed');
-    certificate.classList.remove('certificate--opened')
-  }
-});
+const btnMgtu = document.querySelector('.education__mgtu');
+const certificateMgtu = document.querySelector('.certificate--mgtu');
+
+button (btnMgtu, certificateMgtu);
+
+const btnHtmlAcademy = document.querySelector('.education__html-academy');
+const certificateHtml = document.querySelector('.certificate--html');
+
+button (btnHtmlAcademy, certificateHtml);
