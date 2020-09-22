@@ -46,7 +46,10 @@
 	      <section class="personal-id" id="personal-id">
           <div class="personal-id__layout-container">
             <h2 class="personal-id__title">Привет! Меня зовут Евгения, я начинающий фронтенд-разработчик.</h2>
-            <img class="personal-id__photo" src="img/personal_photo.jpg" width="" alt="Персональная фотография">
+            <picture>
+              <source type="image/webp" srcset="img/personal_photo.webp, img/personal_photo_2x.webp 2x">
+              <img class="personal-id__photo" src="img/personal_photo.jpg" srcset="img/personal_photo_2x.jpg 2x" width="" alt="Персональная фотография">
+            </picture>
   	        <p class="personal-id__description">
   	          Вот информация, которая поможет узнать меня лучше:
   	          <ul class="personal-id__list">
@@ -118,34 +121,55 @@
 
             <div class="education__certificate certificate certificate--mgtu certificate--closed">
               <a href="">
-  							<img class="certificate__image" src="img/Certificate.png" width="440" alt="Сертификат о прохождении курса «Adobe Illustrator CC/CS6 для MAC и РС. Создание векторных иллюстраций»">
+                <picture>
+                  <source type="image/webp" srcset="img/Certificate.webp, img/Certificate_2x.webp 2x">
+                  <img class="certificate__image" src="img/Certificate.png" srcset="img/Certificate_2x.png 2x" width="440" alt="Сертификат о прохождении курса «Adobe Illustrator CC/CS6 для MAC и РС. Создание векторных иллюстраций»">
+                </picture>
   							<p class="certificate__name">Adobe Illustrator CC/CS6 для MAC и РС. Создание векторных иллюстраций.</p>
   						</a>
               <a href="">
-  							<img class="certificate__image" src="img/Certificate-(1).png" width="440" alt="Сертификат о прохождении курса «Юзабилити сайтов. Проектирование веб-интерфейсов»">
+                <picture>
+                  <source type="image/webp" srcset="img/Certificate1.webp, img/Certificate1_2x.webp 2x">
+                  <img class="certificate__image" src="img/Certificate1.png" srcset="img/Certificate1_2x.png 2x" width="440" alt="Сертификат о прохождении курса «Юзабилити сайтов. Проектирование веб-интерфейсов»">
+                </picture>
   							<p class="certificate__name">Юзабилити сайтов. Проектирование веб-интерфейсов.</p>
   						</a>
               <a href="">
-  							<img class="certificate__image" src="img/Certificate-(2).png" width="440" alt="Сертификат о прохождении курса «Adobe Photoshop CC/CS6 для MAC и РС. Растровая графика»">
+                <picture>
+                  <source type="image/webp" srcset="img/Certificate2.webp, img/Certificate2_2x.webp 2x">
+                  <img class="certificate__image" src="img/Certificate2.png" srcset="img/Certificate2_2x.png 2x" width="440" alt="Сертификат о прохождении курса «Adobe Photoshop CC/CS6 для MAC и РС. Растровая графика»">
+                </picture>
   							<p class="certificate__name">Adobe Photoshop CC/CS6 для MAC и РС. Растровая графика.</p>
   						</a>
               <a href="">
-  							<img class="certificate__image" src="img/Certificate-(3).png" width="440" alt="Сертификат о прохождении курса «HTML и CSS. Создание сайтов на HTML 5 и CSS 3»">
+                <picture>
+                  <source type="image/webp" srcset="img/Certificate3.webp, img/Certificate3_2x.webp 2x">
+                  <img class="certificate__image" src="img/Certificate3.png" srcset="img/Certificate3_2x.png 2x" width="440" alt="Сертификат о прохождении курса «HTML и CSS. Создание сайтов на HTML 5 и CSS 3»">
+                </picture>
   							<p class="certificate__name">HTML и CSS. Создание сайтов на HTML 5 и CSS 3.</p>
   						</a>
               <a href="">
-  							<img class="certificate__image" src="img/Certificate-(4).png" width="440" alt="Сертификат о прохождении курса «Рисунок. От простого к сложному»">
+                <picture>
+                  <source type="image/webp" srcset="img/Certificate4.webp, img/Certificate4_2x.webp 2x">
+                  <img class="certificate__image" src="img/Certificate4.png" srcset="img/Certificate4_2x.png 2x" width="440" alt="Сертификат о прохождении курса «Рисунок. От простого к сложному»">
+                </picture>
   							<p class="certificate__name">Рисунок. От простого к сложному.</p>
   						</a>
             </div>
 
   					<div class="education__certificate certificate certificate--html certificate--closed">
   						<a href="">
-  							<img class="certificate__image" src="img/397961@1x_(4).jpg" width="265" alt="Сертификат о прохождении профессии «Фронтенд-разработчик»">
+                <picture>
+                  <source type="image/webp" srcset="img/Certificate5.webp, img/Certificate5_2x.webp 2x">
+                  <img class="certificate__image" src="img/Certificate5.jpg" srcset="img/Certificate5_2x.jpg 2x" width="265" alt="Сертификат о прохождении профессии «Фронтенд-разработчик»">
+                </picture>
   							<p class="certificate__name">Professional "Front-end Developer"</p>
   						</a>
   						<a href="">
-  							<img class="certificate__image" src="img/397961@1x.jpg" width="265" alt="Сертификат о прохождении HTML и CSS, уровень 1 #25">
+                <picture>
+                  <source type="image/webp" srcset="img/Certificate6.webp, img/Certificate6_2x.webp 2x">
+                  <img class="certificate__image" src="img/Certificate6.jpg" srcset="img/Certificate6_2x.jpg 2x" width="265" alt="Сертификат о прохождении HTML и CSS, уровень 1 #25">
+                </picture>
   							<div class="certificate__overlay">
   								<div class="certificate__text">
   									Работа с системой контроля версий в GitHub Desktop и с макетом в графических редакторах, создание выразительной и доступной разметки, построение сетки страниц на флексах, работа с кастомными свойствами, оптимизация кода.
@@ -154,7 +178,10 @@
   							<p class="certificate__name">HTML и CSS, уровень 1</p>
   						</a>
   						<a href="">
-  							<img class="certificate__image" src="img/397961@1x_(1).jpg" width="265" alt="Сертификат о прохождении HTML и CSS, уровень 2 #17">
+                <picture>
+                  <source type="image/webp" srcset="img/Certificate7.webp, img/Certificate7_2x.webp 2x">
+                  <img class="certificate__image" src="img/Certificate7.jpg" srcset="img/Certificate7_2x.jpg 2x" width="265" alt="Сертификат о прохождении HTML и CSS, уровень 2 #17">
+                </picture>
   							<div class="certificate__overlay">
   								<div class="certificate__text">
   									Создание разметки по методологии БЭМ, написание CSS-кода на препроцессорах, работа с адаптивной сеткой, адаптивной и ретиновой графикой и подготовка автоматизации сборки проекта для публикации.
@@ -163,11 +190,17 @@
   							<p class="certificate__name">HTML и CSS, уровень 2</p>
   						</a>
   						<a href="">
-  							<img class="certificate__image" src="img/397961@1x_(2).jpg" width="265" alt="Сертификат о прохождении JavaScript, уровень 1 #18">
+                <picture>
+                  <source type="image/webp" srcset="img/Certificate8.webp, img/Certificate8_2x.webp 2x">
+                  <img class="certificate__image" src="img/Certificate8.jpg" srcset="img/Certificate8_2x.jpg 2x" width="265" alt="Сертификат о прохождении JavaScript, уровень 1 #18">
+                </picture>
   							<p class="certificate__name">JavaScript, уровень 1</p>
   						</a>
               <a href="">
-                <img class="certificate__image" src="img/397961@1x_(3).jpg" width="265" alt="Сертификат о прохождении JavaScript. Профессиональная разработка веб-интерфейсов #20">
+                <picture>
+                  <source type="image/webp" srcset="img/Certificate9.webp, img/Certificate9_2x.webp 2x">
+                  <img class="certificate__image" src="img/Certificate9.jpg" srcset="img/Certificate9_2x.jpg 2x" width="265" alt="Сертификат о прохождении JavaScript. Профессиональная разработка веб-интерфейсов #20">
+                </picture>
                 <p class="certificate__name">Профессиональная разработка веб-интерфейсов</p>
               </a>
             </div>
@@ -214,25 +247,37 @@
             <div class="portfolio__container">
     	        <div class="portfolio__work">
     	          <a class="portfolio__link" href="">
-    	            <img class="portfolio__image" width="320" src="img/device.jpg" alt="Проект «Device»">
+                  <picture>
+                    <source type="image/webp" srcset="img/device.webp, img/device_2x.webp 2x">
+                    <img class="portfolio__image" src="img/device.jpg" srcset="img/device_2x.jpg 2x" width="320" alt="Проект «Device»">
+                  </picture>
                   <span class="portfolio__name">Device</span>
     	          </a>
     	        </div>
     	        <div class="portfolio__work">
     	          <a class="portfolio__link" href="">
-    	            <img class="portfolio__image" width="320" src="img/cat-energy.jpg" alt="Проект «Cat energy»">
+                  <picture>
+                    <source type="image/webp" srcset="img/cat-energy.webp, img/cat-energy_2x.webp 2x">
+                    <img class="portfolio__image" src="img/cat-energy.jpg" srcset="img/cat-energy_2x.jpg 2x" width="320" alt="Проект «Cat energy»">
+                  </picture>
                   <span class="portfolio__name">Cat energy</span>
     	          </a>
     	        </div>
     	        <div class="portfolio__work">
     	          <a class="portfolio__link" href="">
-    	            <img class="portfolio__image" width="320" src="img/code-and-magick.jpg" alt="Проект «Code and magick»">
+                  <picture>
+                    <source type="image/webp" srcset="img/code-and-magick.webp, img/code-and-magick_2x.webp 2x">
+                    <img class="portfolio__image" src="img/code-and-magick.jpg" srcset="img/code-and-magick_2x.jpg 2x" width="320" alt="Проект «Code and magick»">
+                  </picture>
                   <span class="portfolio__name">Code and magick</span>
     	          </a>
     	        </div>
     	        <div class="portfolio__work">
     	          <a class="portfolio__link" href="">
-    	            <img class="portfolio__image" width="320" src="img/keksogram.jpg" alt="Проект «Keksogram»">
+                  <picture>
+                    <source type="image/webp" srcset="img/keksogram.webp, img/keksogram_2x.webp 2x">
+                    <img class="portfolio__image" src="img/keksogram.jpg" srcset="img/keksogram_2x.jpg 2x" width="320" alt="Проект «Keksogram»">
+                  </picture>
                   <span class="portfolio__name">Kekstagram</span>
     	          </a>
     	        </div>
