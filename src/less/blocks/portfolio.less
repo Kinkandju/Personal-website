@@ -19,10 +19,19 @@
 }
 
 .portfolio__work {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
   margin: 0 -20px;
   padding: 20px 20px;
 
   width: 100%;
+
+  // @media (min-width: @mobil-to-tablet-width) {
+  //   width: 100%;
+  // }
 
   @media (min-width: @tablet-width) {
     width: 45%;
@@ -48,14 +57,6 @@
     transition-duration: 0.5s;
   }
 }
-
-// .portfolio__link picture {
-//   display: flex;
-//   align-self: center;
-//   align-content: center;
-//
-//   width: 100%;
-// }
 
 .portfolio__image {
   width: 100%;

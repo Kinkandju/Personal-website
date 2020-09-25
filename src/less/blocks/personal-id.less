@@ -6,8 +6,27 @@
   }
 }
 
+.personal-id__container {
+  @media (min-width: @tablet-to-desktop-width) {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    // align-items: center;
+  }
+}
+
+.personal-id__container picture {
+  @media (min-width: @tablet-to-desktop-width) {
+    width: 42%;
+  }
+}
+
 .personal-id__photo {
   width: 100%;
+
+  @media (min-width: @tablet-to-desktop-width) {
+    max-width: 350px;
+  }
 }
 
 .personal-id__description {
@@ -16,13 +35,20 @@
 
   font-weight: bold;
   color: @marengo;
+
+  @media (min-width: @tablet-to-desktop-width) {
+    margin: 0;
+
+    width: 56%;
+  }
 }
 
 .personal-id__list {
-  margin: 0;
+  margin-top: 10px;
   padding: 0;
 
   list-style: none;
+  font-weight: normal;
 }
 
 .personal-id__item {
