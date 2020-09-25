@@ -1,7 +1,8 @@
 .certificate {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-content: center;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -17,7 +18,6 @@
   @media (min-width: @mobil-to-tablet-width) {
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-content: flex-start;
   }
 }
@@ -45,6 +45,22 @@
 
   @media (min-width: @mobil-to-tablet-width) {
     padding: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 18%;
+  }
+}
+
+.certificate--mgtu a {
+  @media (min-width: @tablet-width) {
+    width: 45%;
+  }
+}
+
+.certificate--html a {
+  @media (min-width: @tablet-to-desktop-width) {
+    width: 30%;
   }
 }
 

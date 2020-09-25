@@ -112,7 +112,7 @@ const {src, dest} = require("gulp"),
           optimizationLevel: 3
         })
       )
-      .pipe(dest(path.build.img))
+      // .pipe(dest(path.build.img))
       .pipe(browsersync.stream())
   }
 

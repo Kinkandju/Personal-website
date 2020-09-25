@@ -42,34 +42,40 @@
     <main class="page-main">
       <div class="page-main__layout-container">
         <h1 class="visually-hidden">Персональная информация, контакты, образование, навыки и портфолио.</h1>
+
 	      <!-- Блок знакомства -->
 	      <section class="personal-id" id="personal-id">
           <div class="personal-id__layout-container">
             <h2 class="personal-id__title">Привет! Меня зовут Евгения, я начинающий фронтенд-разработчик.</h2>
-            <picture>
-              <source type="image/webp" srcset="img/personal_photo.webp, img/personal_photo_2x.webp 2x">
-              <img class="personal-id__photo" src="img/personal_photo.jpg" srcset="img/personal_photo_2x.jpg 2x" width="" alt="Персональная фотография">
-            </picture>
-  	        <p class="personal-id__description">
-  	          Вот информация, которая поможет узнать меня лучше:
-  	          <ul class="personal-id__list">
-  	            <li class="personal-id__item">
-  								<p>
-  									Родилась и живу в Москве. При наличии работы, работаю тут же. Для себя решила, что готова к переезду в другие города, страны, континенты.
-  								</p>
-  	            </li>
-  	            <li class="personal-id__item">
-                  <p>
-                    Мне 32 года. Нахожусь в таком возрасте, когда уже кое-что понимаешь и повидал всякое. Некоторые называют это жизненным опытом. В то же время, есть силы и желания изменить к лучшему свою жизнь, учиться новому и не бояться сделать первый шаг в светлое будущее.
-                  </p>
-  	            </li>
-  	            <li class="personal-id__item">
-                  <p>
-                    Люблю путешествовать, также являюсь образцовым туристом.
-                  </p>
-  	            </li>
-  	          </ul>
-  	        </p>
+            <div class="personal-id__container">
+              <picture>
+                <source type="image/webp" media="(min-width: 920px)" srcset="img/personal_photo_tablet.webp, img/personal_photo_tablet_2x.webp 2x">
+                <source type="image/webp" srcset="img/personal_photo.webp, img/personal_photo_2x.webp 2x">
+
+                <source media="(min-width: 920px)" srcset="img/personal_photo_tablet.jpg, img/personal_photo_tablet_2x.jpg 2x">
+                <img class="personal-id__photo" src="img/personal_photo.jpg" srcset="img/personal_photo_2x.jpg 2x" width="" alt="Персональная фотография">
+              </picture>
+    	        <div class="personal-id__description">
+    	          Вот информация, которая поможет узнать меня лучше:
+    	          <ul class="personal-id__list">
+    	            <li class="personal-id__item">
+    								<p>
+    									Родилась и живу в Москве. При наличии работы, работаю тут же. Для себя решила, что готова к переезду в другие города, страны, континенты.
+    								</p>
+    	            </li>
+    	            <li class="personal-id__item">
+                    <p>
+                      Мне 32 года. Нахожусь в таком возрасте, когда уже кое-что понимаешь и повидал всякое. Некоторые называют это жизненным опытом. В то же время, есть силы и желания изменить к лучшему свою жизнь, учиться новому и не бояться сделать первый шаг в светлое будущее.
+                    </p>
+    	            </li>
+    	            <li class="personal-id__item">
+                    <p>
+                      Люблю путешествовать, также являюсь образцовым туристом.
+                    </p>
+    	            </li>
+    	          </ul>
+    	        </div>
+            </div>
           </div>
 	      </section>
 
