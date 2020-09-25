@@ -17,8 +17,8 @@
   @media (min-width: @mobil-to-tablet-width) {
     flex-direction: row;
     justify-content: space-around;
-    align-content: flex-start;
     flex-wrap: wrap;
+    align-content: flex-start;
   }
 }
 
@@ -41,6 +41,10 @@
 
   &:hover .certificate__overlay {
     opacity: 1;
+  }
+
+  @media (min-width: @mobil-to-tablet-width) {
+    padding: 10px;
   }
 }
 
@@ -77,6 +81,12 @@
 .certificate__name {
   display: block;
 
+  max-width: 440px;
+
   margin: 0 auto;
   padding: 0;
+}
+
+.certificate__name--last {
+  max-width: 265px;
 }
